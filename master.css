@@ -1,0 +1,167 @@
+body {
+  background: black;
+}
+
+#skills {
+  height: 400px;
+  position: relative;
+  margin-top: 100px;
+  pointer-events: fill;
+  cursor: pointer;
+  transform: perspective(900px);
+  display: flex;
+  flex-direction: column;
+}
+#skills:hover .skills-circle {
+  transform: rotate3d(60, 35, 0, 360deg);
+}
+#skills .skills-circle {
+  width: 400px;
+  height: 400px;
+  position: absolute;
+  top: 0;
+  left: 0;
+  right: 0;
+  bottom: 0;
+  margin: auto;
+  border-radius: 50%;
+  transition: 3s all;
+}
+#skills .skills-circle .skill-orbit {
+  border-radius: 50%;
+  position: absolute;
+  top: 0;
+  left: 0;
+  right: 0;
+  bottom: 0;
+  margin: auto;
+  transition: 3s all;
+  transform: perspective(900px);
+  border: 1px solid gray;
+}
+#skills .skills-circle .skill-orbit:nth-child(1) {
+  width: 100%;
+  height: 100%;
+}
+#skills .skills-circle .skill-orbit:nth-child(1) > .skill-planet {
+  border: 2px solid blue;
+  box-shadow: 0 0 10px blue;
+  color: blue;
+  font-size: 16px;
+  line-height: 26px;
+  animation: travelOrbit 10s infinite linear;
+  transform-origin: 50% 630%;
+}
+#skills .skills-circle .skill-orbit:nth-child(1) > .skill-planet > span {
+  animation: unrotate 10s infinite linear;
+}
+#skills .skills-circle .skill-orbit:nth-child(2) {
+  width: 82.5%;
+  height: 82.5%;
+}
+#skills .skills-circle .skill-orbit:nth-child(2) > .skill-planet {
+  border: 2px solid green;
+  color: green;
+  box-shadow: 0 0 10px green;
+  font-size: 12px;
+  line-height: 26px;
+  animation: travelOrbit 8s infinite linear;
+  transform-origin: 50% 530%;
+}
+#skills .skills-circle .skill-orbit:nth-child(2) > .skill-planet > span {
+  animation: unrotate 8s infinite linear;
+}
+#skills .skills-circle .skill-orbit:nth-child(3) {
+  width: 65%;
+  height: 65%;
+}
+#skills .skills-circle .skill-orbit:nth-child(3) > .skill-planet {
+  border: 2px solid purple;
+  color: purple;
+  box-shadow: 0 0 10px purple;
+  font-size: 9px;
+  line-height: 26px;
+  animation: travelOrbit 6s infinite linear;
+  transform-origin: 50% 430%;
+}
+#skills .skills-circle .skill-orbit:nth-child(3) > .skill-planet > span {
+  animation: unrotate 6s infinite linear;
+}
+#skills .skills-circle .skill-orbit:nth-child(4) {
+  width: 47.5%;
+  height: 47.5%;
+}
+#skills .skills-circle .skill-orbit:nth-child(4) > .skill-planet {
+  border: 2px solid yellow;
+  color: yellow;
+  box-shadow: 0 0 10px yellow;
+  font-size: 1rem;
+  line-height: 26px;
+  animation: travelOrbit 4s infinite linear;
+  transform-origin: 50% 329%;
+}
+#skills .skills-circle .skill-orbit:nth-child(4) > .skill-planet > span {
+  animation: unrotate 4s infinite linear;
+}
+#skills .skills-circle .skill-orbit:nth-child(5) {
+  width: 30%;
+  height: 30%;
+}
+#skills .skills-circle .skill-orbit:nth-child(5) > .skill-planet {
+  border: 2px solid darkred;
+  color: darkred;
+  box-shadow: 0 0 10px darkred;
+  font-size: 18px;
+  line-height: 26px;
+  animation: travelOrbit 3s infinite linear;
+  transform-origin: 50% 217%;
+}
+#skills .skills-circle .skill-orbit:nth-child(5) > .skill-planet > span {
+  animation: unrotate 3s infinite linear;
+}
+#skills .skills-circle .skill-orbit .skill-planet {
+  width: 30px;
+  height: 30px;
+  border-radius: 50%;
+  position: absolute;
+  top: -15px;
+  left: 0;
+  right: 0;
+  margin: 0 auto;
+  font-family: Arial;
+  font-weight: 100;
+  text-align: center;
+  transition: 1s all;
+}
+#skills .skills-top-circle {
+  position: absolute;
+  top: 0;
+  left: 0;
+  right: 0;
+  bottom: 0;
+  margin: auto;
+  width: 40px;
+  height: 40px;
+  border-radius: 50%;
+  background: #fff;
+  box-shadow: 0 0 50px #FFEB00;
+}
+
+@keyframes travelOrbit {
+  0% {
+    transform: rotate(0deg);
+  }
+  100% {
+    transform: rotate(360deg);
+  }
+}
+@keyframes unrotate {
+  0% {
+    transform: rotate(0deg);
+  }
+  100% {
+    transform: rotate(-360deg);
+  }
+}
+
+/*# sourceMappingURL=master.css.map */

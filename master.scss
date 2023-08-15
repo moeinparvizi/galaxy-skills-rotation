@@ -1,16 +1,17 @@
+body{
+  background: black;
+}
     #skills {
         height: 400px;
         position: relative;
         margin-top: 100px;
         pointer-events: fill;
         cursor: pointer;
-        -webkit-transform: perspective(900px);
         transform: perspective(900px);
         display: flex;
         flex-direction: column;
 
         &:hover .skills-circle {
-            -webkit-transform: rotate3d(60, 35, 0, 360deg);
             transform: rotate3d(60, 35, 0, 360deg);
         }
 
@@ -36,24 +37,22 @@
                 margin: auto;
                 transition: 3s all;
                 transform: perspective(900px);
+                border: 1px solid gray;
 
                 &:nth-child(1) {
                     width: 100%;
                     height: 100%;
 
                     >.skill-planet {
-                        border: 2px solid #FFF9BF;
-                        box-shadow: 0 0 10px #FFF9BF;
-                        color: #FFF9BF;
+                        border: 2px solid blue;
+                        box-shadow: 0 0 10px blue;
+                        color: blue;
                         font-size: 16px;
                         line-height: 26px;
-                        -webkit-animation: travelOrbit 10s infinite linear;
                         animation: travelOrbit 10s infinite linear;
-                        -webkit-transform-origin: 50% 713%;
-                        transform-origin: 50% 713%;
+                        transform-origin: 50% 630%;
 
                         >span {
-                            -webkit-animation: unrotate 10s infinite linear;
                             animation: unrotate 10s infinite linear;
                         }
                     }
@@ -64,18 +63,15 @@
                     height: 82.5%;
 
                     >.skill-planet {
-                        border: 2px solid #A3B476;
-                        color: #A3B476;
-                        box-shadow: 0 0 10px #A3B476;
+                        border: 2px solid green;
+                        color: green;
+                        box-shadow: 0 0 10px green;
                         font-size: 12px;
                         line-height: 26px;
-                        -webkit-animation: travelOrbit 8s infinite linear;
                         animation: travelOrbit 8s infinite linear;
-                        -webkit-transform-origin: 50% 597%;
-                        transform-origin: 50% 597%;
+                        transform-origin: 50% 530%;
 
                         >span {
-                            -webkit-animation: unrotate 8s infinite linear;
                             animation: unrotate 8s infinite linear;
                         }
                     }
@@ -86,18 +82,15 @@
                     height: 65%;
 
                     >.skill-planet {
-                        border: 2px solid #C77751;
-                        color: #C77751;
-                        box-shadow: 0 0 10px #C77751;
+                        border: 2px solid purple;
+                        color: purple;
+                        box-shadow: 0 0 10px purple;
                         font-size: 9px;
                         line-height: 26px;
-                        -webkit-animation: travelOrbit 6s infinite linear;
                         animation: travelOrbit 6s infinite linear;
-                        -webkit-transform-origin: 50% 480%;
-                        transform-origin: 50% 480%;
+                        transform-origin: 50% 430%;
 
                         >span {
-                            -webkit-animation: unrotate 6s infinite linear;
                             animation: unrotate 6s infinite linear;
                         }
                     }
@@ -108,25 +101,15 @@
                     height: 47.5%;
 
                     >.skill-planet {
-                        border: 2px solid #FBAF3F;
-                        box-shadow: 0 0 10px #FBAF3F;
+                        border: 2px solid yellow;
+                        color: yellow;
+                        box-shadow: 0 0 10px yellow;
                         font-size: 1rem;
-                        // line-height: 26px;
-                        -webkit-animation: travelOrbit 4s infinite linear;
+                        line-height: 26px;
                         animation: travelOrbit 4s infinite linear;
-                        -webkit-transform-origin: 50% 363%;
-                        transform-origin: 50% 363%;
+                        transform-origin: 50% 329%;
 
                         >span {
-                            margin: auto;
-                            >svg {
-                                >.tailwind-logo {
-                                    fill: #FBAF3F;
-                                    fill-rule: evenodd;
-                                }
-                            }
-
-                            -webkit-animation: unrotate 4s infinite linear;
                             animation: unrotate 4s infinite linear;
                         }
                     }
@@ -137,65 +120,16 @@
                     height: 30%;
 
                     >.skill-planet {
-                        border: 2px solid purple;
-                        color: purple;
-                        box-shadow: 0 0 10px purple;
+                        border: 2px solid darkred;
+                        color: darkred;
+                        box-shadow: 0 0 10px darkred;
                         font-size: 18px;
                         line-height: 26px;
-                        -webkit-animation: travelOrbit 3s infinite linear;
                         animation: travelOrbit 3s infinite linear;
-                        -webkit-transform-origin: 50% 243%;
-                        transform-origin: 50% 243%;
+                        transform-origin: 50% 217%;
 
                         >span {
-                            -webkit-animation: unrotate 3s infinite linear;
                             animation: unrotate 3s infinite linear;
-                        }
-                    }
-                }
-
-                &:nth-child(6) {
-                    width: 117.5%;
-                    height: 117.5%;
-                    left: -35px;
-
-                    >.skill-planet {
-                        border: 2px solid orangered;
-                        color: orangered;
-                        box-shadow: 0 0 10px orangered;
-                        font-size: 18px;
-                        line-height: 26px;
-                        -webkit-animation: travelOrbit 20s infinite linear;
-                        animation: travelOrbit 20s infinite linear;
-                        -webkit-transform-origin: 50% 829%;
-                        transform-origin: 50% 829%;
-
-                        >span {
-                            -webkit-animation: unrotate 20s infinite linear;
-                            animation: unrotate 20s infinite linear;
-                        }
-                    }
-                }
-
-                &:nth-child(7) {
-                    width: 135%;
-                    height: 135%;
-                    left: -70px;
-
-                    >.skill-planet {
-                        border: 2px solid pink;
-                        color: pink;
-                        box-shadow: 0 0 10px pink;
-                        font-size: 1.2rem;
-                        line-height: 26px;
-                        -webkit-animation: travelOrbit 23s infinite linear;
-                        animation: travelOrbit 23s infinite linear;
-                        -webkit-transform-origin: 50% 945%;
-                        transform-origin: 50% 945%;
-
-                        >span {
-                            -webkit-animation: unrotate 23s infinite linear;
-                            animation: unrotate 23s infinite linear;
                         }
                     }
                 }
@@ -231,4 +165,24 @@
             box-shadow: 0 0 50px #FFEB00;
         }
     }
+
+@keyframes travelOrbit {
+    0% {
+        transform: rotate(0deg);
+    }
+
+    100% {
+        transform: rotate(360deg);
+    }
+}
+
+@keyframes unrotate {
+    0% {
+        transform: rotate(0deg);
+    }
+
+    100% {
+        transform: rotate(-360deg);
+    }
+}
 
