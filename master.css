@@ -12,9 +12,6 @@ body {
   display: flex;
   flex-direction: column;
 }
-#skills:hover .skills-circle {
-  transform: rotate3d(60, 35, 0, 360deg);
-}
 #skills .skills-circle {
   width: 400px;
   height: 400px;
@@ -26,6 +23,9 @@ body {
   margin: auto;
   border-radius: 50%;
   transition: 3s all;
+}
+#skills .skills-circle:hover {
+  transform: rotate3d(60, 35, 0, 360deg);
 }
 #skills .skills-circle .skill-orbit {
   border-radius: 50%;
@@ -45,8 +45,10 @@ body {
 }
 #skills .skills-circle .skill-orbit:nth-child(1) > .skill-planet {
   border: 2px solid blue;
-  box-shadow: 0 0 10px blue;
-  color: blue;
+  background: blue;
+  box-shadow: 0 0 10px blue, 0 0 20px blue;
+  background: blue;
+  color: white;
   font-size: 16px;
   line-height: 26px;
   animation: travelOrbit 10s infinite linear;
@@ -61,8 +63,9 @@ body {
 }
 #skills .skills-circle .skill-orbit:nth-child(2) > .skill-planet {
   border: 2px solid green;
-  color: green;
-  box-shadow: 0 0 10px green;
+  box-shadow: 0 0 10px green, 0 0 20px green;
+  background: green;
+  color: white;
   font-size: 12px;
   line-height: 26px;
   animation: travelOrbit 8s infinite linear;
@@ -77,8 +80,9 @@ body {
 }
 #skills .skills-circle .skill-orbit:nth-child(3) > .skill-planet {
   border: 2px solid purple;
-  color: purple;
-  box-shadow: 0 0 10px purple;
+  box-shadow: 0 0 10px purple, 0 0 20px purple;
+  background: purple;
+  color: white;
   font-size: 9px;
   line-height: 26px;
   animation: travelOrbit 6s infinite linear;
@@ -93,9 +97,10 @@ body {
 }
 #skills .skills-circle .skill-orbit:nth-child(4) > .skill-planet {
   border: 2px solid yellow;
-  color: yellow;
-  box-shadow: 0 0 10px yellow;
-  font-size: 1rem;
+  box-shadow: 0 0 10px yellow, 0 0 20px yellow;
+  background: yellow;
+  color: black;
+  font-size: 0.8rem;
   line-height: 26px;
   animation: travelOrbit 4s infinite linear;
   transform-origin: 50% 329%;
@@ -109,8 +114,9 @@ body {
 }
 #skills .skills-circle .skill-orbit:nth-child(5) > .skill-planet {
   border: 2px solid darkred;
-  color: darkred;
-  box-shadow: 0 0 10px darkred;
+  box-shadow: 0 0 10px darkred, 0 0 20px darkred;
+  background: darkred;
+  color: white;
   font-size: 18px;
   line-height: 26px;
   animation: travelOrbit 3s infinite linear;
