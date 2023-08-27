@@ -70,7 +70,7 @@ moein parvizi
 <!-- ABOUT THE PROJECT -->
 ## About The Project
 
-![IMG_20230828_003319_301](https://github.com/moeinparvizi/galaxy-skills-rotation/assets/38692466/78f60480-010a-4225-aee5-06eb2152d72f
+![IMG_20230828_003319_301](https://github.com/moeinparvizi/galaxy-skills-rotation/assets/38692466/78f60480-010a-4225-aee5-06eb2152d72f)
 
 A galaxy to infinit rotate and write by sass if u like it give me a star and follow
 
