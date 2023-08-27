@@ -121,6 +121,7 @@ Don't forget to give the project a star! Thanks again!
 ## Contact
 
 moeinparvizi - [linkedin](https://linkedin.com/in/moeinparvizi2002) - giventulip@gmail.com
+<br>
 Personal website : [moein parvizi](https://moeinparvizi.github.io/personal-website/)
 
 
